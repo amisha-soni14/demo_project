@@ -1,0 +1,329 @@
+    body{
+      background-image: url("ass.jpeg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100% ;
+
+      }
+    .top-menu{
+      list-style-type: none;
+      overflow: hidden;
+      z-index: 999;
+    }
+    .list-menu{
+      float:right;
+      position: relative;
+
+    }
+    .list-menu a{
+      display: block;
+      color: black;
+      text-align: left;
+      padding: 15px;
+      font-size: 30px;
+
+    }
+    .list-menu a:hover {
+        background-color: tan ;
+    }
+    .menu{
+      float: right
+      height: 200px;
+      width: 100%;
+      position: relative;
+      padding-top: 25px;
+    }
+    #background{
+
+      height: 1100px;
+      width: 100%;
+      }
+    .company-name{
+
+      height: 200px;
+      width: 40%;
+      float: left;
+      position: relative
+    }
+    #top-section{
+      height: 200px;
+      width: 100%;
+      position: sticky;
+      top: 0;
+
+    }
+    #mid-section{
+
+      height: 600px;
+      width: 100%;
+      text-align: center;
+    }
+    .heading1{
+      text-align: left;
+      font-size: 50px;
+      color: black;
+
+    }
+    .heading2{
+      text-align: center;
+      font-size: 50px;
+      color: white;
+      padding: 10px;
+
+    }
+    .heading3{
+      color: white;
+      font-size:30px;
+      text-align: right;
+      padding-right: 10px;
+    }
+    .heading4{
+      color: white;
+      font-size:30px;
+      text-align: left;
+      padding-right: 10px;
+    }
+    #foot{
+
+      height: 140px;
+      width: 100%;
+
+    }
+    .buton{
+      border-radius: 8px;
+      border-color:   white;
+      margin-right: 20px;
+      color: white;
+      padding: 18px ;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 25px;
+      background-image: url("a1.jpeg");
+      background-size: cover ;
+
+    }
+    .buton a:hover{
+      background-color: gray;
+    }
+    .buton a:link {
+       color:black  ;
+    }
+    #add{
+
+      height: 120px;
+      width: 30%;
+      float: right;
+      position: relative;
+    }
+    .addres{
+      height: 120px;
+      width: 60%;
+      text-align: right;
+      font-size: 30px;
+      color: white;
+      float: right;
+      position: relative;
+      padding-right: 10px;
+    }
+    .intro{
+      background-color: black;
+      height: 550px;
+      width: 100%;
+      opacity: 0.5;
+
+    }
+    .text1{
+      height: 400px;
+      width: 40%;
+      color: white;
+      font-size:25px;
+      float: left;
+      text-align: right;
+
+    }
+    .text2{
+      height: 400px;
+      width: 40%;
+      color: white;
+      font-size:25px;
+      float: right;
+      text-align:left;
+
+    }
+    .intro-img{
+      height: 50px;
+      width: 20%;
+      float: left;
+      position:relative;
+      opacity: 1;,
+      margin: 10px;
+
+    }
+   .bottom-icon{
+      height: 140px;
+      width: 100%;
+      float: left;
+      position: relative;
+    }
+    .icon-list{
+      list-style-type: none;
+      overflow: hidden;
+    }
+    .icon{
+      float:right;
+      position: relative;
+    }
+    .icon a{
+      color: black;
+      text-align: right;
+      padding-right: 15px;
+      display: inline-block;
+      align-items: center;
+    }
+    .about{
+      background-color: black;
+      height: 400px;
+      width: 100%;
+      opacity: 0.5;
+      margin-top: 10px;
+    }
+    .discription{
+      height: 400px;
+      width: 60%;
+      color: white;
+      font-size:25px;
+      float: left;
+      text-align: left;
+      padding: 20px;
+    }
+    .about-img{
+      height: 400px;
+      width: 35%;
+      float: right;
+      text-align: left;
+      position:relative;
+
+    }
+    p::first-letter {
+      color: yellow;
+      font-size: xx-large;
+    }
+    .login-form{
+      height: 600px;
+      width: 70%;
+      background-color: white;
+      left: 30%;
+      margin-left: 15%;
+      box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.50);
+    }
+    .bg-img{
+      height: 600px;
+      width: 50%;
+      background-image: url("bg.jpeg");
+      background-size: cover;
+      background-position: center;
+      float: left;
+      position: relative;
+    }
+    .content{
+      height: 600px;
+      width: 50%;
+      float: right;
+      position: relative;
+      box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.50);
+      text-align: center;
+      z-index: 999;
+      background-color: lightgray;
+
+    }
+    .login{
+      color: black;
+      font-size: 33px;
+      font-weight: bolder;
+      margin: 30% 0 0 0;
+      margin-bottom: 20px;
+
+    }
+    .register{
+      color: black;
+      font-size: 33px;
+      font-weight: bolder;
+      margin: 10% 0 0 0;
+      margin-bottom: 20px;
+    }
+    .field{
+
+      position: relative;
+      height: 45px;
+      margin-left: 25%;
+      width: 50%;
+      background-color: white;
+      box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.50);
+    }
+    .field span{
+      color: black;
+      padding-right: 10px;
+      line-height: 40px;
+    }
+    .field input{
+      height: 100%;
+      width: 80%;
+      background: transparent;
+      border: none;
+      outline: 1px;
+      color:#222;
+      font-size: 20px;
+      font-weight: bold;
+
+    }
+    .space{
+      margin-top: 13px;
+    }
+    .create-acc{
+      text-align: center;
+      margin: 20px 0;
+
+    }
+    .create-acc a{
+      color: black;
+      font-weight: bold;
+      font-size: 20px;
+      display: block;
+      margin-top: 15px;
+    }
+
+    .create-acc span{
+      font-weight: bold;
+      font-size: 20px;
+      color: black;
+      max-width: 20px;
+
+    }
+    .success{
+      height: 100px;
+      width: 40%;
+      float: left;
+      position: relative;
+      box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.50);
+      text-align: center;
+      z-index: 999;
+      color: darkgreen;
+      background-color: lightgreen;
+      border: solid darkgreen;
+      border-radius: 5px;
+      margin: 20% 0 0 50px;
+
+    }
+    .message{
+      display: block;
+      margin-top: 6%;
+      font-size: 20px;
+      font-weight: bolder;
+    }
+    .thank-you{
+      display: block;
+      font-size: 16px;
+      font-weight: bold;
+      padding-top: 8px;
+    }
