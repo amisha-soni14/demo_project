@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title>leap year</title>
+</head>
+<body>
+	<h1>Check Year Is Leap Year Or not</h1>
+	<form>
+		<label>Enter the year : </label>
+		<input type="text" name="year" id="year"><br><br>
+		<button type="button" id="checker" onClick="yearcheck()">Check Here</button>
+		<p>The Result is :
+			<span id="res"></span>
+		</p>
+	</form>
+
+	<script>
+		function yearcheck() {
+			let year;
+			year=parseInt(document.getElementById('year').value);
+			if (isNaN(year))
+			{
+				alert("Fill out this field");
+			}
+			else
+			{
+				if (year%4==0) 
+				{
+					document.getElementById('res').innerHTML=year+" is a Leap Year";
+				}
+				else  
+				{
+					document.getElementById('res').innerHTML=year+" is not a Leap Year";
+				}
+			}
+		}
+	</script>
+</body>
+</html>

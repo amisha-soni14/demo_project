@@ -1,0 +1,49 @@
+<html>
+<head>
+	<title>Check prime or not</title>
+</head>
+<body>
+	<h1>Check Number Is Prime Or Not</h1>
+	<form>
+		<label>Enter the Number : </label>
+		<input type="number" name="num" id="num"><br><br>
+		<button type="button" id="checker" onClick="primechecker()">Check Here</button>
+		<p>The Result is :
+			<span id="res"></span>
+		</p>
+	</form>
+
+	<script>
+		function primechecker()
+		{
+			debugger
+			let number,i ,flag;
+			flag=1;
+			number=parseInt(document.getElementById('num').value);
+			if (isNaN(number))
+			{
+				alert("Fill out this field");
+			}
+			else
+			{
+				for(i=2;i<=number/2;i++)
+				{
+					if(number%i==0)
+					{
+						flag=0;
+						break;
+					}
+				}
+				if (flag==1) 
+				{
+					document.getElementById('res').innerHTML=number+" is a prime number";
+				}
+				else 
+				{
+					document.getElementById('res').innerHTML=number+" is not a prime number";
+				}
+			}
+		}
+	</script>
+</body>
+</html>

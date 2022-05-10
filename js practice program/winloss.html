@@ -1,0 +1,46 @@
+<html>
+<head>
+	<title>Score Board</title>
+</head>
+<body>
+	<h1>Score Board</h1>
+	<form>
+		<label>Enter the score of Player 1</label>
+		<input type="text" name="player1" id="player1" placeholder="Enter the score"><br><br>
+
+		<label>Enter the score of Player 2</label>
+		<input type="text" name="player2" id="player2" placeholder="Enter the score"><br><br>
+
+		<button type="button" id="win-loss" onClick="winloss()">Win/loss</button>
+		<p>Result is :
+			<span id="result"></span>
+		</p>
+
+	</form>
+	<script>
+		function winloss()
+		{
+			
+			let player_1, player_2;
+			player_1=parseInt(document.getElementById('player1').value);
+			player_2=parseInt(document.getElementById('player2').value);
+			if (player_1 > player_2) 
+			{
+				document.getElementById('result').innerHTML="Player 1 is win by" +" "+(player_1-player_2) + " " + "score";
+			}
+		  else if(player_1 < player_2)
+		  {
+				document.getElementById('result').innerHTML="Player 2 is win by" +" "+(player_2-player_1) + " " + "score";
+			}
+			else if(player_1 == player_2)
+			{
+				document.getElementById('result').innerHTML=" Match is Tie ";
+			}
+			else
+			{
+				alert("Fill out this fields");
+			}
+		}
+	</script>	
+</body>
+</html>

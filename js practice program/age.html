@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title>Age Board</title>
+</head>
+<body>
+	<h1>Age Board</h1>
+	<form>
+		<label>Enter the Age : </label>
+		<input type="text" name="age" id="age"><br><br>
+		<button type="button" id="checker" onClick="agechecker()">Check Here</button>
+	</form>
+
+	<script>
+		function agechecker() {
+			let age;
+			age=parseInt(document.getElementById('age').value);
+			if (age < 18) 
+			{
+				alert("He/She is an under the age");
+			}
+			else if (age >= 18 && age <= 21) 
+			{
+				alert("He/She is between the age of 18 to 21");
+			}
+			else if (age > 21) 
+			{
+				alert("He/She is an above the age");
+			}
+			else
+			{
+				alert("Fill out this field");
+			}
+		}	
+	</script>
+</body>
+</html>
