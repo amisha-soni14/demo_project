@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title>Reverse number</title>
+		<style>
+		div{
+			text-align: center;
+			background-color: pink;
+			height: 25%;
+			width: 25%;
+			margin-left: 35%;
+			margin-top: 10%;
+			border: 5px solid black;
+		}
+	</style>
+	</head>
+<body>
+	<div>
+		<h1>Reverse a number</h1>
+		<form>
+				<label>Enter any number : </label>
+				<input type="text" name="num" id="num"><br><br>
+				<button type="button" id="sum" onClick="reverse()">Reverse</button><br><br>
+				<p>Reverse number : </p>
+				<span id="rev"></span>
+		</form>
+	</div>
+	<script>
+		function reverse() 
+		{
+			let i,rev,rem;
+			let number;
+			number=parseInt(document.getElementById('num').value);
+			rev=0;
+			while(number>0)
+			{
+				rem=number%10;
+				number=number/10;
+				number=Math.floor(number);
+				rev=rem+(rev*10);
+			}
+			document.getElementById('rev').innerHTML=rev;
+		}
+	</script>
+</body>
+</html>

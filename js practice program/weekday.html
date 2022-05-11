@@ -1,0 +1,75 @@
+<html>
+<head>
+	<title>Weekday</title>
+	<style>
+		div{
+			text-align: center;
+			background-color: lightgreen;
+			height: 25%;
+			width: 30%;
+			margin-left: 33%;
+			border: 5px solid black;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<h1>Weekday</h1>
+		<form>
+			<label>Enter the week number : </label>
+			<input type="text" name="week" id="week"><br><br>
+			<button type="button" id="checker" onClick="weekcheck()">Check Here</button>
+			<p>There is a :
+				<span id="res"></span>
+			</p>
+		</form>
+	</div>
+	<script>
+		function weekcheck() {
+			let week;
+			week =parseInt(document.getElementById('week').value);
+
+			if (isNaN(week))
+			{
+				alert("Fill out this field");
+			}
+			else
+			{
+				switch(week)
+				{
+					case 1:
+						document.getElementById('res').innerHTML="Monday";
+						break;
+
+					case 2:
+						document.getElementById('res').innerHTML="Tuesday";
+						break;
+
+					case 3:
+						document.getElementById('res').innerHTML="Wednesday";
+						break;
+
+					case 4:
+						document.getElementById('res').innerHTML="Thrusday";
+						break;
+
+					case 5:
+						document.getElementById('res').innerHTML="Friday";
+						break;
+
+					case 6:
+						document.getElementById('res').innerHTML="Saturday";
+						break;
+
+					case 7:
+						document.getElementById('res').innerHTML="Sunday";
+						break;
+
+					default:
+					   alert("Enter the number between 1 to 7");
+				}
+			}
+		}
+	</script>
+</body>
+</html>

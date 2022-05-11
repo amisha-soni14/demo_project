@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>Natural number</title>
+		<style>
+		div{
+			text-align: center;
+			background-color: lightgrey;
+			height: 25%;
+			width: 25%;
+			margin-left: 35%;
+			margin-top: 10%;
+			border: 5px solid black;
+		}
+	</style>
+	</head>
+<body>
+	<div>
+		<h1>Sum of natural number</h1>
+		<form>
+				<label>Enter any positive number : </label>
+				<input type="text" name="num" id="num"><br><br>
+				<button type="button" id="sum" onClick="add()">Sum</button>
+				<p>The sum is  :
+					<span id="res"></span>
+				</p>
+		</form>
+	</div>
+	<script>
+		function add() 
+		{
+			let i;
+			let number;
+			number=parseInt(document.getElementById('num').value);
+			var sum=0;
+			if (isNaN(number))
+			{
+				alert("Fill out this field");
+			}
+			else{
+				for(i=1;i<=number;i++)
+				{
+					sum =sum + i;
+				}
+				document.getElementById('res').innerHTML=sum;
+				}
+	  }
+	</script>
+
+</body>
+</html>
