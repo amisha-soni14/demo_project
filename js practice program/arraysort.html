@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Sorting</title>
+  </head>
+  <body>
+    <h1>The Array is :</h1>
+      <span id="array"></span>
+    <h1>Sorted Array</h1>
+      <span id="array1"></span>
+    <h1>New Array after addition of elemnt</h1>
+    <span id="add1"></span>
+    <script>
+      //debugger
+      var array = [];
+      var size = 5;
+      for(var i=0; i<size ; i++) {
+        array[i] = prompt('Enter Element ' + (i+1));
+      }
+      document.getElementById("array").innerHTML=array;
+
+      array.sort(function(a, b){return a - b});
+      document.getElementById("array1").innerHTML=array;
+
+      // var add= prompt("Enter the Element which u want to add : ");
+      // var pos= prompt("Enter the position on which u want to add that element");
+      array.splice(2,0,45);
+      document.getElementById("add1").innerHTML=array;
+    </script>
+  </body>
+</html>

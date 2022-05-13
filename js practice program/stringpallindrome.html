@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>String</title>
+</head>
+<body>
+  <h1> Reverse string is:</h1>
+    <p id="rev"></p>
+  <h1> Check string is pallindrome or not :</h1>
+    <p id="str"></p>
+  <script>
+    let string1= prompt("Enter the string");
+    let string2= string1.split('');
+    let rev= string2.reverse();
+    let str= rev.join('');
+    document.getElementById('rev').innerHTML=str;
+    let res=string1.localeCompare(str);
+    if (res==0)
+    {
+      document.getElementById('str').innerHTML=string1+" "+" is pallindrome string";
+    }
+    else
+    {
+      document.getElementById('str').innerHTML=string1+" "+" is not a pallindrome string";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>String duplicacy</title>
+</head>
+<body>
+  <h1> String is:</h1>
+    <p id="str"></p>
+  <h1> After removing duplicates elements :</h1>
+    <p id="strdup"></p>
+  <script>
+
+    function removeDuplicate(string1)
+    {
+       return string1.split('')
+        .filter(function(item, pos, self)
+        {
+          return self.indexOf(item) == pos;
+        }
+       ).join('');
+    }
+    let string= prompt("Enter the string");
+    document.getElementById('str').innerHTML=string;
+    document.getElementById('strdup').innerHTML=removeDuplicate(string);
+  </script>
+</body>
+</html>
